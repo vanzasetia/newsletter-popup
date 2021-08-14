@@ -20,7 +20,7 @@
 }
 
 @mixin on-event($focus: false) {
-  @if $self {
+  @if $focus {
     &:focus,
     &:hover,
     &:active {
