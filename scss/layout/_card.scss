@@ -31,11 +31,21 @@
   align-items: flex-start;
   justify-content: space-between;
   margin-top: rem(18);
+  
+  @include breakpoint-down("tiny") {
+    flex-direction: column;
+    align-items: initial;
+    justify-content: initial;
+  }
 }
 
 .card__wrapper {
   position: relative;
   flex-basis: rem(225);
+  
+  @include breakpoint-down("tiny") {
+    flex-basis: 100%;
+  }
 }
 
 .card__email {
@@ -66,6 +76,11 @@
   @include focus-visible;
   @include on-event {
     background-color: $btn-hover-bg;
+  }
+  
+  @include breakpoint-down("tiny") {
+    flex-basis: 100%;
+    padding: rem(16) 0;
   }
 }
 
@@ -137,6 +152,10 @@
 
 .card__description {
   margin-top: -#{rem(5)};
+  
+  @include breakpoint-down("tiny") {
+    margin-top: rem(6);
+  }
 }
 
 .card__testimonial {
