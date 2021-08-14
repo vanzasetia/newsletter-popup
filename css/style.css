@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -384,9 +385,9 @@ html {
 }
 
 body {
-  color: #111111;
+  color: #414141;
   font-family: "Work Sans", sans-serif;
-  font-size: 1rem;
+  font-size: 0.875rem;
 }
 
 h1 {
@@ -395,9 +396,19 @@ h1 {
 
 p,
 blockquote {
-  margin: 0.875rem 0;
-  line-height: 1.6;
-  font-weight: 600;
+  margin: 0.5rem 0;
+  line-height: 1.4;
+}
+
+em {
+  font-style: normal;
+  opacity: 0.4;
+}
+
+fieldset {
+  display: block;
+  border: none;
+  padding: 0;
 }
 
 a {
@@ -412,4 +423,182 @@ img {
   display: block;
   height: auto;
   max-width: 100%;
+}
+
+/*------------------------------------*\
+  #CARD
+\*------------------------------------*/
+.card__header {
+  background: #2355f2 url("../assets/pattern.png") no-repeat center center/cover;
+  padding: 3rem;
+  text-align: center;
+  color: white;
+}
+
+.card__title {
+  margin: 0;
+  font-size: 1.375rem;
+}
+
+.card__content {
+  padding: 1.25rem 0.875rem;
+}
+
+.card__legend {
+  text-align: center;
+  line-height: 1.4;
+  font-size: 0.8125rem;
+}
+
+.card__flex {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-top: 1.125rem;
+}
+
+.card__wrapper {
+  position: relative;
+  flex-basis: 14.0625rem;
+}
+
+.card__email {
+  display: block;
+  background: no-repeat right 0.5rem center/1rem;
+  background-color: #f5f7fa;
+  border: 0.0625rem solid #dddee1;
+  border-radius: 0.25em;
+  padding: 0.3125rem 1.875rem 0.3125rem 1rem;
+  height: 2.375rem;
+  width: 100%;
+  font-size: 0.875rem;
+}
+.card__email:focus-visible {
+  outline: 0.125rem dashed #0c39c5;
+  outline-offset: 0.1875rem;
+}
+
+.card__submit-btn {
+  flex-basis: 6.25rem;
+  border: 0;
+  border-radius: 0.25em;
+  background-color: #2355f2;
+  cursor: pointer;
+  height: 2.375rem;
+  color: white;
+  font-weight: 600;
+  font-size: 0.75rem;
+}
+.card__submit-btn:focus-visible {
+  outline: 0.125rem dashed #0c39c5;
+  outline-offset: 0.1875rem;
+}
+.card__submit-btn:hover, .card__submit-btn:active {
+  background-color: #537af5;
+}
+
+.card__label {
+  position: absolute;
+  top: 0.625rem;
+  left: 1rem;
+  opacity: 0.3;
+}
+
+.card__placeholder {
+  height: 1.1875rem;
+}
+
+.card__alert {
+  display: none;
+  margin: 0;
+  color: red;
+  line-height: 1;
+  font-weight: 600;
+  font-size: 0.75rem;
+}
+
+/*------------------------------------*\
+  #FORM-VALIDATION
+\*------------------------------------*/
+/**
+* If the user input start input email, then:
+* 1. Hide the label like placeholder.
+*/
+.card__email:not(:placeholder-shown) ~ .card__label {
+  display: none;
+  /* 1 */
+}
+
+/**
+* When the user "not focus" on the input email and
+* leave an invalid email address, then:
+* 1. Show the alert message
+*/
+.card__email:invalid:not(:placeholder-shown):not(:focus) ~ .card__placeholder .card__alert {
+  display: block;
+  /* 1 */
+}
+
+/**
+* When the user start typing and the it is not
+* a valid email address, then:
+* 1. Input email has red border
+* 2. Show the cross mark "❌"
+*/
+.card__email:invalid:not(:placeholder-shown):focus {
+  border-color: red;
+  background-image: url("../assets/times-mark.svg");
+}
+
+/**
+* If the form valid, then:
+* 1. Input email has green border
+* 2. Show check mark "✔️"
+*/
+.card__email:valid {
+  border-color: #67e914;
+  /* 1 */
+  background-image: url("../assets/check-mark.svg");
+  /* 2 */
+}
+
+/*------------------------------------*\
+  #ENDOF-FORM-VALIDATION
+\*------------------------------------*/
+.card__description {
+  margin-top: -0.3125rem;
+}
+
+.card__testimonial {
+  margin-top: 1.5rem;
+}
+
+.card__figure {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card__figcaption {
+  margin-left: 0.5rem;
+}
+
+.card__name,
+.card__job {
+  margin: 0;
+}
+
+.card__name {
+  color: #111111;
+  font-weight: 600;
+}
+
+.card__job {
+  font-size: 0.875rem;
+}
+
+.card__quote {
+  margin-top: 0.625rem;
+  text-align: center;
+  font-size: 0.75rem;
 }

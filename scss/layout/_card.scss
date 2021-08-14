@@ -1,0 +1,174 @@
+@use "../abstracts" as *;
+
+/*------------------------------------*\
+  #CARD
+\*------------------------------------*/
+
+.card__header {
+  background: $blue url("../assets/pattern.png") no-repeat center center/cover;
+  padding: rem(48);
+  text-align: center;
+  color: $pure-white;
+}
+
+.card__title {
+  margin: 0;
+  font-size: rem(22);
+}
+
+.card__content {
+  padding: rem(20) rem(14);
+}
+
+.card__legend {
+  text-align: center;
+  line-height: 1.4;
+  font-size: rem(13);
+}
+
+.card__flex {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-top: rem(18);
+}
+
+.card__wrapper {
+  position: relative;
+  flex-basis: rem(225);
+}
+
+.card__email {
+  display: block;
+  background: no-repeat right rem(8) center/#{rem(16)};
+  background-color: $pale-blue;
+  border: rem(1) solid shade($pale-blue, 10%);
+  border-radius: 0.25em;
+  padding: rem(5) rem(30) rem(5) rem(16);
+  height: rem(38);
+  width: 100%;
+  font-size: rem(14);
+  
+  @include focus-visible;
+}
+
+.card__submit-btn {
+  flex-basis: rem(100);
+  border: 0;
+  border-radius: 0.25em;
+  background-color: $blue;
+  cursor: pointer;
+  height: rem(38);
+  color: $pure-white;
+  font-weight: 600;
+  font-size: rem(12);
+  
+  @include focus-visible;
+  @include on-event {
+    background-color: $btn-hover-bg;
+  }
+}
+
+.card__label {
+  position: absolute;
+  top: rem(10);
+  left: rem(16);
+  opacity: 0.3;
+}
+
+.card__placeholder {
+  height: rem(19);
+}
+
+.card__alert {
+  display: none;
+  margin: 0;
+  color: $alert-color;
+  line-height: 1;
+  font-weight: 600;
+  font-size: rem(12);
+}
+
+/*------------------------------------*\
+  #FORM-VALIDATION
+\*------------------------------------*/
+
+/**
+* If the user input start input email, then:
+* 1. Hide the label like placeholder.
+*/
+.card__email:not(:placeholder-shown) ~ .card__label {
+  display: none; /* 1 */
+}
+
+/**
+* When the user "not focus" on the input email and
+* leave an invalid email address, then:
+* 1. Show the alert message
+*/
+.card__email:invalid:not(:placeholder-shown):not(:focus) ~ .card__placeholder .card__alert {
+  display: block; /* 1 */
+}
+
+/**
+* When the user start typing and the it is not
+* a valid email address, then:
+* 1. Input email has red border
+* 2. Show the cross mark "❌"
+*/
+.card__email:invalid:not(:placeholder-shown):focus {
+  border-color: $red;
+  background-image: url("../assets/times-mark.svg");
+}
+
+/**
+* If the form valid, then:
+* 1. Input email has green border
+* 2. Show check mark "✔️"
+*/
+.card__email:valid {
+  border-color: $valid-color; /* 1 */
+  background-image: url("../assets/check-mark.svg"); /* 2 */
+}
+
+/*------------------------------------*\
+  #ENDOF-FORM-VALIDATION
+\*------------------------------------*/
+
+.card__description {
+  margin-top: -#{rem(5)};
+}
+
+.card__testimonial {
+  margin-top: rem(24);
+}
+
+.card__figure {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card__figcaption {
+  margin-left: rem(8);
+}
+
+.card__name,
+.card__job {
+  margin: 0;
+}
+
+.card__name {
+  color: $black;
+  font-weight: 600;
+}
+
+.card__job {
+  font-size: rem(14);
+}
+
+.card__quote {
+  margin-top: rem(10);
+  text-align: center;
+  font-size: rem(12);
+}
