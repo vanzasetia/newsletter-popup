@@ -7,6 +7,7 @@ $focus-visible-color: rgb(12, 57, 197) !default;
 
 // Colors
 $blue: rgb(35, 85, 242);
+$lighter-blue: rgb(83, 122, 245);
 $pale-blue: rgb(245, 247, 250);
 $bright-green: rgb(103, 233, 20);
 $red: rgb(255, 0, 0);
@@ -15,6 +16,7 @@ $pure-white: rgb(255, 255, 255);
 // Use Cases
 $header-bg: $blue;
 $btn-bg: $blue;
+$btn-hover-bg: $lighter-blue;
 $input-bg: $pale-blue;
 
 // Breakpoints
