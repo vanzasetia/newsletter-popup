@@ -33,7 +33,9 @@
 ## Intro
 This is one of the challenge from [Codewell](https://www.codewell.cc). Codewell's aim is to provide you with real-world design templates that you can use to practice your HTML and CSS projects.
 
-But I think, you can also practice your JavaScript by adding JavaScript if you want. Like for example, in this challenge you can try to create a form validation using Vanilla JavaScript.
+You can also practice your JavaScript by adding JavaScript if you want. Like for example, in this challenge you can try to create a form validation using Vanilla JavaScript.
+
+Since, I don't have a good knowledge on JavaScript yet, I don't use any JavaScript in this project.
 
 ## The Story When Doing This Challenge
 
