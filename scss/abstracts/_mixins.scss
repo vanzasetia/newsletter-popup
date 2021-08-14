@@ -5,7 +5,7 @@
 @mixin focus-visible() {
   &:focus-visible {
     outline: rem(2) dashed $focus-visible-color;
-    outline-offset: rem(5);
+    outline-offset: rem(3);
   }
 }
 
