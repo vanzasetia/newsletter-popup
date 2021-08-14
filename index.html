@@ -82,6 +82,45 @@
   <title>Vanza Setia | Newsletter Popup</title>
 </head>
 <body dir="ltr">
-  <h1>Hello World</h1>
+  <main>
+    <section class="card">
+      <div class="card__container">
+        <header class="card__header">
+          <h1 class="card__title">Creating email templates has never been easier</h1>
+        </header>
+        <div class="card__content">
+          <form class="card__form" name="subscribe" method="POST" netlify-honeypot="bot-field" data-netlify="true">
+            <fieldset class="card__fieldset">
+              <legend class="card__legend">Receive daily emails on how to best create email templates, completely free.</legend>
+              <p hidden>
+               <label for="bot">Don’t fill this out if you’re human: <input id="bot" name="bot-field" /></label>
+              </p>
+              <div class="card__flex">
+                <div class="card__wrapper">
+                  <input type="email" name="email" id="cardEmail" class="card__email" required placeholder=" " aria-describedby="alertMessage">
+                  <label class="card__label" for="cardEmail">Email Address</label>
+                  <div class="card__placeholder">
+                    <p class="card__alert" id="alertMessage">Please check your email</p>
+                  </div>
+                </div>
+                <button class="card__submit-btn" type="submit">Subscribe</button>
+              </div>
+              <p class="card__description"><em class="card__emphasize">No spam, ever. Unsubscribe anytime.</em></p>
+            </fieldset>
+          </form>
+          <div class="card__testimonial">
+            <figure class="card__figure">
+              <img src="./assets/user-avatar.svg" alt="Andrew Vickins" width="45" height="45">
+              <figcaption class="card__figcaption">
+                <p class="card__name">Andrew Vickins</p>
+                <p class="card__job">Newsletter Designer</p>
+              </figcaption>
+            </figure>
+            <blockquote class="card__quote">"By far one of the best newsletter I've ever subscribed to. It is sent biweekly and I'm always looking forward to their emails."</blockquote>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
 </body>
 </html>
