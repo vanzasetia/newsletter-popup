@@ -25,7 +25,6 @@
 ## Table of contents
 - [Intro](#intro)
 - [Story](#the-story-when-doing-this-challenge)
-- [What I Learned](#what-i-learned)
 - [Technology that I used](#built-with)
 - [Useful Resources](#useful-resources)
 - [Continued Development](#continued-development)
@@ -45,7 +44,7 @@ I ended making the body doing flexbox things to make the card center and added `
 ## Built With
 This project is created using **HTML5**, **CSS3**, and **Sass**. I also created a simple form validation using HTML and CSS.
 
-I uploaded this to Netlify and used one of the form features from [Netlify which was Forms Spam Filters](https://docs.netlify.com/forms/spam-filters/), using **Honeypot field**.
+I uploaded this to [Netlify](https://netlify.com) and used one of the form features from [Netlify which was Forms Spam Filters](https://docs.netlify.com/forms/spam-filters/), using **Honeypot field**.
 
 <p align="left">
   <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg" alt="" width="auto" height="70px">
