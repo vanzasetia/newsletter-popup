@@ -24,9 +24,11 @@ $valid-color: $bright-green;
 // Breakpoints
 // Note: If you user font-size setting is 16px, then this 'em' is equal to this in 'px'
 $breakpoints-up: (
-  "tiny": 21.875em // => 350px
+  "tiny": 21.875em, // => 350px
+  "very-small": 28.125em // => 450px
 );
 
 $breakpoints-down: (
   "tiny": 21.8125em, // => 349px
+  "very-small": 28.0625em // => 449px
 );
