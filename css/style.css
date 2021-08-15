@@ -389,6 +389,17 @@ body {
   font-family: "Work Sans", sans-serif;
   font-size: 0.875rem;
 }
+@media screen and (min-width: 28.125em) {
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url("../assets/background-gradient.png") no-repeat center center/cover;
+    min-height: 100vh;
+    padding: 1.5rem;
+    font-size: 1rem;
+  }
+}
 
 h1 {
   line-height: 1.2;
@@ -428,6 +439,17 @@ img {
 /*------------------------------------*\
   #CARD
 \*------------------------------------*/
+.card {
+  background-color: white;
+}
+@media screen and (min-width: 28.125em) {
+  .card {
+    border-radius: 0.5em;
+    max-width: 28.125rem;
+    overflow: hidden;
+  }
+}
+
 .card__header {
   background: #2355f2 url("../assets/pattern.png") no-repeat center center/cover;
   padding: 3rem;
@@ -439,15 +461,30 @@ img {
   margin: 0;
   font-size: 1.375rem;
 }
+@media screen and (min-width: 28.125em) {
+  .card__title {
+    font-size: 1.875rem;
+  }
+}
 
 .card__content {
   padding: 1.25rem 0.875rem;
+}
+@media screen and (min-width: 28.125em) {
+  .card__content {
+    padding: 1.25rem;
+  }
 }
 
 .card__legend {
   text-align: center;
   line-height: 1.4;
   font-size: 0.8125rem;
+}
+@media screen and (min-width: 28.125em) {
+  .card__legend {
+    font-size: 1rem;
+  }
 }
 
 .card__flex {
@@ -463,6 +500,11 @@ img {
     justify-content: initial;
   }
 }
+@media screen and (min-width: 28.125em) {
+  .card__flex {
+    margin-top: 1.5rem;
+  }
+}
 
 .card__wrapper {
   position: relative;
@@ -471,6 +513,11 @@ img {
 @media screen and (max-width: 21.8125em) {
   .card__wrapper {
     flex-basis: 100%;
+  }
+}
+@media screen and (min-width: 28.125em) {
+  .card__wrapper {
+    flex-basis: 17.8125rem;
   }
 }
 
@@ -488,6 +535,12 @@ img {
 .card__email:focus-visible {
   outline: 0.125rem dashed #0c39c5;
   outline-offset: 0.1875rem;
+}
+@media screen and (min-width: 28.125em) {
+  .card__email {
+    height: 2.75rem;
+    font-size: 1rem;
+  }
 }
 
 .card__submit-btn {
@@ -514,12 +567,24 @@ img {
     padding: 1rem 0;
   }
 }
+@media screen and (min-width: 28.125em) {
+  .card__submit-btn {
+    flex-basis: 7.5rem;
+    height: 2.75rem;
+    font-size: 1rem;
+  }
+}
 
 .card__label {
   position: absolute;
   top: 0.625rem;
   left: 1rem;
   opacity: 0.3;
+}
+@media screen and (min-width: 28.125em) {
+  .card__label {
+    top: 0.875rem;
+  }
 }
 
 .card__placeholder {
@@ -624,4 +689,10 @@ img {
   margin-top: 0.625rem;
   text-align: center;
   font-size: 0.75rem;
+}
+@media screen and (min-width: 28.125em) {
+  .card__quote {
+    margin-top: 1rem;
+    font-size: 0.875rem;
+  }
 }

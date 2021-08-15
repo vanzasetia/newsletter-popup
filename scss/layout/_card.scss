@@ -4,6 +4,16 @@
   #CARD
 \*------------------------------------*/
 
+.card {
+  background-color: $pure-white;
+  
+  @include breakpoint-up("very-small") {
+    border-radius: 0.5em;
+    max-width: rem(450);
+    overflow: hidden;
+  }
+}
+
 .card__header {
   background: $blue url("../assets/pattern.png") no-repeat center center/cover;
   padding: rem(48);
@@ -14,16 +24,28 @@
 .card__title {
   margin: 0;
   font-size: rem(22);
+  
+  @include breakpoint-up("very-small") {
+    font-size: rem(30);
+  }
 }
 
 .card__content {
   padding: rem(20) rem(14);
+  
+  @include breakpoint-up("very-small") {
+    padding: rem(20);
+  }
 }
 
 .card__legend {
   text-align: center;
   line-height: 1.4;
   font-size: rem(13);
+  
+  @include breakpoint-up("very-small") {
+    font-size: rem(16);
+  }
 }
 
 .card__flex {
@@ -37,6 +59,10 @@
     align-items: initial;
     justify-content: initial;
   }
+  
+  @include breakpoint-up("very-small") {
+    margin-top: rem(24);
+  }
 }
 
 .card__wrapper {
@@ -45,6 +71,10 @@
   
   @include breakpoint-down("tiny") {
     flex-basis: 100%;
+  }
+  
+  @include breakpoint-up("very-small") {
+    flex-basis: rem(285);
   }
 }
 
@@ -60,6 +90,10 @@
   font-size: rem(14);
   
   @include focus-visible;
+  @include breakpoint-up("very-small") {
+    height: rem(44);
+    font-size: rem(16);
+  }
 }
 
 .card__submit-btn {
@@ -82,6 +116,12 @@
     flex-basis: 100%;
     padding: rem(16) 0;
   }
+  
+  @include breakpoint-up("very-small") {
+    flex-basis: rem(120);
+    height: rem(44);
+    font-size: rem(16);
+  }
 }
 
 .card__label {
@@ -89,6 +129,10 @@
   top: rem(10);
   left: rem(16);
   opacity: 0.3;
+  
+  @include breakpoint-up("very-small") {
+    top: rem(14);
+  }
 }
 
 .card__placeholder {
@@ -190,4 +234,9 @@
   margin-top: rem(10);
   text-align: center;
   font-size: rem(12);
+  
+  @include breakpoint-up("very-small") {
+    margin-top: rem(16);
+    font-size: rem(14);
+  }
 }
