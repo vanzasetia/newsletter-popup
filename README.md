@@ -38,19 +38,20 @@ You can also practice your JavaScript by adding JavaScript if you want. Like for
 Since, I don't have a good knowledge on JavaScript yet, I don't use any JavaScript in this project.
 
 ## The Story When Doing This Challenge
+The layout for the card is pretty straight forward, so nothing special for it. But, the interesting part was, when I wanted to make the card responsive. I should make it not full width anymore, which was a unique thing in my opinion.
 
-## What I Learned
-
+I ended making the body doing flexbox things to make the card center and added `max-width` to the card to prevent getting larger on bigger screen.
 
 ## Built With
-This project is created using **HTML5**, **CSS3**, and **Sass**. 
+This project is created using **HTML5**, **CSS3**, and **Sass**. I also created a simple form validation using HTML and CSS.
 
-I used one of the form features from [Netlify which Forms Spam Filters](https://docs.netlify.com/forms/spam-filters/), using **Honeypot field**.
+I uploaded this to Netlify and used one of the form features from [Netlify which was Forms Spam Filters](https://docs.netlify.com/forms/spam-filters/), using **Honeypot field**.
 
 <p align="left">
   <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg" alt="" width="auto" height="70px">
   <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg" alt="" width="auto" height="70px">
   <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/sass/sass-original.svg" alt="" width="auto" height="70px">
+  <img src="https://www.netlify.com/img/press/logos/logomark.svg" alt="" width="auto" height="70px">
 </p>
 
 ## Useful Resources
