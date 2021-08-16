@@ -16,8 +16,8 @@
 
 ## Feedback and Live Review
 * [🌐 Live Review](https://vanzanewsletter.netlify.app/)
-* [👉 Give your thoughts on Codewell]()
-* [👉 Give your thoughts on Twitter]()
+* [👉 Give your thoughts on Codewell](https://www.codewell.cc/solution/6119b773a383e41090a3cdbb)
+* [👉 Give your thoughts on Twitter](https://twitter.com/vanzasetia/status/1427075566654480386?s=19)
 
 ## Screenshot
 ![Desktop preview](./screenshots/desktop.jpg)
